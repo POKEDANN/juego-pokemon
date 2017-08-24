@@ -6,7 +6,25 @@
 	<link rel="stylesheet" href="css/registro.css">
 
 	<title>Registro</title>
-	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/pokemon.js"></script>
+	<script>
+		$(function() {
+			// Bloquear submit, hasta contraseñas iguales
+			$('#formulario').on('submit', function(e){
+				var pass,
+					rPass;
+
+				pass = $('#pass').val();
+				rPass = $('#repass').val();
+
+				if (pass !== rPass) {
+					alert('las contraseñas no coinciden');
+					e.preventDefault();
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<section>
@@ -22,6 +40,7 @@
 						<input type="password" placeholder="Contraseña" name="pass">
 						<p>Confirma tu contraseña</p>
 						<input type="password" placeholder="Confirma tu contraseña" name="repass">
+						<h5 id="noContraseña" style="color: red;background-color: white;width: 20%;display: none;"><?php echo $nopass ?></h5>
 						<p>¿Eres hombre o mujer?</p>
 						<label><input type="radio" name="sexo" value="hombre">Hombre</label>
 						<label><input type="radio" name="sexo" value="mujer">Mujer</label><br>
@@ -34,6 +53,4 @@
 
 	<table></table>
 </body>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/pokemon.js"></script>
 </html>

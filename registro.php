@@ -31,21 +31,24 @@
 	// echo 'pass: ' . $pass . '<br>';
 	// echo 'sexo: ' . $sexo . '<br>';
 
+	// if ($_POST['pass']!= $_POST['repass']){
+ //     	$nopass = "Las contraseñas no coinciden";
+ // 	} else {
+ // 		header('Location: http://192.168.64.2/juego pokemon/plataforma.html');
+ // 	}
+
 	$new_user->usuario = $usuario;
 	$new_user->pass = $pass;
 	$new_user->pass = $repass;
 	$new_user->sexo = $sexo;
 
 	R::store($new_user);
+
+	header('Location: http://192.168.64.2/juego pokemon/plataforma.html');
 	
 	// if(isset($_POST['registrar'])){
 	// 	echo("<script type='text/javascript'>prompt('nombre: " . $usuario . "pass: " . $pass . "sexo: " . $gender . "'); </script>");//este sirve para hacer un prompt
 	// 	header('Location: http://192.168.64.2/juego pokemon/plataforma.html');
 	// }
 
-	if ($_POST['pass']!= $_POST['repass']){
-     	echo("Las contraseñas no coinciden");
- 	} else {
- 		header('Location: http://192.168.64.2/juego pokemon/plataforma.html');
- 	}
  ?>

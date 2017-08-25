@@ -19,7 +19,7 @@
 				rPass = $('#repass').val();
 
 				if (pass !== rPass) {
-					alert('las contraseñas no coinciden');
+					$("#noContraseña").show();
 					e.preventDefault();
 				}
 			});
@@ -32,18 +32,18 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<form action="registro.php" id="formulario" method="POST">
-						<h1>Bienvenido a Pokemon Turquesa</h1>
-						<h3>Por favor registrate</h3>
-						<p>Escribe tu usuario</p>
+						<h1 class="turquesa">Bienvenido a Pokemon Turquesa</h1>
+						<h3 class="turquesa">Por favor registrate</h3>
+						<p class="turquesa">Escribe tu usuario</p>
 						<input type="text" placeholder="Usuario" name="usuario">
-						<p>Escribe tu contraseña</p>
+						<p class="turquesa">Escribe tu contraseña</p>
 						<input type="password" placeholder="Contraseña" id="pass" name="pass">
-						<p>Confirma tu contraseña</p>
+						<p class="turquesa">Confirma tu contraseña</p>
 						<input type="password" placeholder="Confirma tu contraseña" id="repass" name="repass">
-						<h5 id="noContraseña" style="color: red;background-color: white;width: 20%;display: none;"><?php echo $nopass ?></h5>
-						<p>¿Eres hombre o mujer?</p>
-						<label><input type="radio" name="sexo" value="hombre">Hombre</label>
-						<label><input type="radio" name="sexo" value="mujer">Mujer</label><br>
+						<h5 id="noContraseña" style="color: red;background-color: white;width: 20%;display: none;">Las contraseñas no coinciden</h5>
+						<p class="turquesa">¿Eres hombre o mujer?</p>
+						<label class="hombre turquesa"><input type="radio" name="sexo" value="hombre"> Hombre</label>
+						<label class="turquesa"><input type="radio" name="sexo" value="mujer"> Mujer</label><br>
 						<input type="submit" name="registrar" value="Registrarme" id="registrarme">
 					</form>
 				</div>

@@ -1,2 +1,7 @@
 body{background-size: cover;background-position: 0 -100px;
 	background-image: url("../img/lucariobg.jpg");background-repeat: no-repeat;}
+h1, h3, form{text-align: center;}
+.turquesa{color: #00ffff;}
+.hombre{margin-right: 10px;}
+#registrarme {background-color: black; color: #00ffff; border: 0; border-radius: 8px;
+	padding: 10px 30px; font-size: 19px; margin-top: 20px; }

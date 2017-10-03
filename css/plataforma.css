@@ -3,3 +3,22 @@ body{background-size: cover;background-image: url("../img/campopok.png");
 .luca{width: 300px;}
 .elect{width: 260px;}
 .ataq1{width: 70%;}
+
+div#slider{
+    border: none !important;
+    background-color: #3535d8;
+    opacity: unset;
+}
+div#slider1{
+    border: none !important;
+    background-color: #3535d8;
+    opacity: unset;
+}
+span#yellowpok {
+    font-size: 30px;
+    color: red;
+}
+span#bluepok {
+    font-size: 30px;
+    color: red;
+}

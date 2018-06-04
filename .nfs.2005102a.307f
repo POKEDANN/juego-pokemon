@@ -26,6 +26,7 @@
 	$repass = $_POST['repass'];
 	$sexo = $_POST['sexo'];
 
+
 	// echo 'usuario: ' . $usuario . '<br>';
 	// echo 'pass: ' . $pass . '<br>';
 	// echo 'sexo: ' . $sexo . '<br>';

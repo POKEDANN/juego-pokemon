@@ -27,6 +27,7 @@
 							<option value="aura sphere">Aura Sphere</option>
 							<option value="shadow claw">Shadow Claw</option>
 						</select>
+						<button id="atacar">Atacar</button>
 					</form>
 				</div>
 				<div class="col-sm-6 text-right">
@@ -43,12 +44,13 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="progress">
-					  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					  <div id="bu" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
 					    <span class="sr-only">100%</span>
 					  </div>
 					</div>
 					<form action="">
-						<select name="ataquesE" id="">
+						<select name="ataquesE" id="ataquesE">
+							<option value="selecciona" disabled selected="true">Selecciona un ataque</option>
 							<option value="thunder punch">Thunder Punch</option>
 							<option value="fire punch">Fire Punch</option>
 							<option value="ice punch">Ice Punch</option>
@@ -61,6 +63,6 @@
 		</div>
 	</section>
 </body>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/plataforma.js"></script>
 </html>

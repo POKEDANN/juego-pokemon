@@ -6,28 +6,26 @@
 	<link rel="stylesheet" href="css/plataforma.css">
 
 	<title>Plataforma</title>
-	<style>
-		ata
-	</style>
 </head>
 <body>
-	<section class="cpu">
+	<section class="cpu pokemon-player" data-oponent=".player1">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
-					<div class="progress">
-					  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+				<div class="col-sm-6 barrita">
+					<div class="progress barraLuca">
+					  <div class="progress-bar barLuca" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
 					    <span class="sr-only">100%</span>
 					  </div>
 					</div>
-					<form action="">
-						<select name="ataquesL" id="">
+					<div class="container" id="vidaLuca"></div>
+					<form>
+						<select name="ataquesL" id="ataquesL" class="selectLuca">
 							<option value="force palm">Force Palm</option>
 							<option value="bone rush">Bone Rush</option>
 							<option value="aura sphere">Aura Sphere</option>
 							<option value="shadow claw">Shadow Claw</option>
 						</select>
-						<button id="atacar">Atacar</button>
+						<button id="atacarL">Atacar</button>
 					</form>
 				</div>
 				<div class="col-sm-6 text-right">
@@ -36,27 +34,29 @@
 			</div>
 		</div>
 	</section>
-	<section class="player1">
+
+	<section class="player1 pokemon-player" data-oponent=".cpu">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 text-left">
 					<img src="https://img.pokemondb.net/sprites/black-white/normal/electivire.png" alt="Electivire" class="elect">
 				</div>
 				<div class="col-sm-6">
-					<div class="progress">
-					  <div id="bu" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					<div class="progress barraLuca">
+					  <div class="progress-bar barEle" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
 					    <span class="sr-only">100%</span>
 					  </div>
 					</div>
-					<form action="">
-						<select name="ataquesE" id="ataquesE">
+					<div class="container" id="vidaEle"></div>
+					<form>
+						<select name="ataquesE" id="ataquesE" class="selectEle">
 							<option value="selecciona" disabled selected="true">Selecciona un ataque</option>
-							<option value="thunder punch">Thunder Punch</option>
+							<option value="thunder punch" data-ataque="25">Thunder Punch</option>
 							<option value="fire punch">Fire Punch</option>
 							<option value="ice punch">Ice Punch</option>
 							<option value="thunder">Thunder</option>
 						</select>
-						<button id="atacar">Atacar</button>
+						<button id="atacarE">Atacar</button>
 					</form>
 				</div>
 			</div>

@@ -1,5 +1,8 @@
 body{background-size: cover;background-image: url("../img/campopok.png");
 		background-position: 0 -100px;}
-.luca{width: 300px;}
-.elect{width: 260px;}
-.ataq1{width: 70%;}
+.luca{width: 330px; margin-right: 90px; margin-top: 30px;}
+.elect{width: 325px; margin-top: -60px; margin-left: 105px; }
+.barraLuca{margin-top: 50px;}
+.selectEle,#atacarE,.barEle{background-color: #ffdf20; font-size: 16px;color: #333;}
+.selectLuca,#atacarL{background-color: #499cee; font-size: 16px;color: #fff;}
+#quetranza {margin-top: -20px; font-size: 20px; }

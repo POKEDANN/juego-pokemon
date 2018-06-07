@@ -12,7 +12,32 @@ $(document).ready(function() {
     var attack = $pokemonPlayer.find('select').val();//aqui busca el valor seleccionado en
     // el select
 
-    var rand = Math.floor(Math.random() * 15) + 1;//aqui selecciona un numero random hasta
+    if (attack == "thunder punch") {
+    	$('.punoa').show(0).delay(2000).animate({left: '250px',bottom: '250px'},'slow').delay(2000).hide(0);
+    }
+    else if (attack == "fire punch") {
+    	$('.punof').show(0).delay(2000).animate({left: '250px',bottom: '250px'},'slow').delay(2000).hide(0);
+    }
+    else if (attack == "ice punch") {
+    	$('.punob').show(0).delay(2000).animate({left: '250px',bottom: '250px'},'slow').delay(2000).hide(0);
+    }
+    else if (attack == "thunder") {
+    	$('.trueno').show(0).delay(2000).animate({left: '250px',bottom: '250px'},'slow').delay(2000).hide(0);
+    }
+    else if (attack == "force palm") {
+    	$('.force').show(0).delay(2000).animate({right: '250px',top: '250px'},'slow').delay(2000).hide(0);
+    }
+    else if (attack == "bone rush") {
+    	$('.hueso').show(0).delay(2000).animate({right: '250px',top: '250px'},'slow').delay(2000).hide(0);
+    }
+    else if (attack == "aura sphere") {
+    	$('.bolaa').show(0).delay(2000).animate({right: '250px',top: '250px'},'slow').delay(2000).hide(0);
+    }
+    else if (attack == "shadow claw") {
+    	$('.shadow').show(0).delay(2000).animate({right: '250px',top: '250px'},'slow').delay(2000).hide(0);
+    }
+
+    var rand = Math.round(Math.random() * 15) + 1;//aqui selecciona un numero random hasta
     // el 15
 
     var width = $progressBar.width() / $progressBar.parent().width() * 100;//aqui le da

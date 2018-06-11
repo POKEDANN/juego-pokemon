@@ -10,3 +10,4 @@ body{background-size: cover;background-image: url("../img/campopok.png");
 	margin-top: -60px;display: none;z-index: 1;}
 .force,.hueso,.bolaa,.shadow{width: 240px; position: absolute; margin-left: 470px;
 	margin-top: 180px;display: none; z-index: 1;}
+#vidaEle,#vidaLuca {margin-top: -15px; margin-left: 410px; font-size: 25px; position: absolute; }

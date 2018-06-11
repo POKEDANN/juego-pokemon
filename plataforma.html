@@ -17,11 +17,11 @@
 					<img src="img/bolaa.jpg" class="bolaa">
 					<img src="img/shadow.png" class="shadow">
 					<div class="progress barraLuca">
-					  <div class="progress-bar barLuca" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					  <div class="progress-bar barLuca" role="progressbar" data-barra="100" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 300%;">
 					    <span class="sr-only">100%</span>
 					  </div>
 					</div>
-					<div class="container" id="vidaLuca"></div>
+					<p id="vidaLuca">300</p>
 					<form>
 						<select name="ataquesL" id="ataquesL" class="selectLuca">
 							<option id="cpucita" value="selecciona" disabled selected="true">Selecciona un ataque</option>
@@ -52,21 +52,18 @@
 				</div>
 				<div class="col-sm-6">
 					<div class="progress barraLuca">
-					  <div class="progress-bar barEle" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					  <div class="progress-bar barEle" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 300%;">
 					    <span class="sr-only">100%</span>
 					  </div>
 					</div>
-					<div class="container" id="vidaEle"></div>
+					<p id="vidaEle">300</p>
 					<form>
 						<select id="playersito" name="ataquesE" id="ataquesE" class="selectEle">
 							<option value="selecciona" disabled selected="true">Selecciona un ataque</option>
 							<option value="thunder punch" data-ataque="75">Thunder Punch</option>
-							<option value="fire punch" 
-							<option value="thunder punch" data-ataque="75">Fire Punch</option>
-							<option value="ice punch" 
-							<option value="thunder punch" data-ataque="75">Ice Punch</option>
-							<option value="thunder" 
-							<option value="thunder punch" data-ataque="120">Thunder</option>
+							<option value="fire punch" data-ataque="75">Fire Punch</option>
+							<option value="ice punch" data-ataque="75">Ice Punch</option>
+							<option value="thunder" data-ataque="120">Thunder</option>
 						</select>
 						<button id="atacarE">Atacar</button>
 					</form>

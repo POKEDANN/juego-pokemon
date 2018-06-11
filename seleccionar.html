@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selecciona a tu pokemon</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/image-picker.css">
+	<link rel="stylesheet" href="css/seleccionar.css">
+</head>
+<body>
+	<section>
+		<div class="container">
+			<div class="row">
+				<h2 class="text-center" style="color: #fff;font-size: 40px;">Free For All</h2>
+				<form action="">
+					<select class="image-picker show-labels show-html" data-limit="3" multiple="multiple">
+					  <option value="">Selecciona 3 pokemon:</option>
+					  <option data-img-src="img/pika.png" value="1">Pikachu</option>
+					  <option data-img-src="img/Charizard.png" value="2">Charizard</option>
+					  <option data-img-src="img/Electivire.png" value="3">Electivire</option>
+					  <option data-img-src="img/Goodra.png" value="4">Goodra</option>
+					  <option data-img-src="img/Greninja.png" value="5">Greninja</option>
+					  <option data-img-src="img/Infernape.png" value="6">Infernape</option>
+					  <option data-img-src="img/Lucario.png" value="7">Lucario</option>
+					  <option data-img-src="img/Victini.png" value="8">Victini</option>
+					  <option data-img-src="img/Gigalith.png" value="9">Gigalith</option>
+					  <option data-img-src="img/Snorlax.png" value="10">Snorlax</option>
+					</select>
+				</form>
+			</div>
+		</div>
+	</section>
+
+</body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/image-picker.js"></script>
+	<script>
+		$("select").imagepicker({limit_reached: function(){alert('Ya elegiste suficientes')}})
+	</script>
+</html>

@@ -1,2 +1,3 @@
 body{background-size: contain;background-image: url("../img/allpokemon.png");}
 .image_picker_image{width: 200px;}
+.seleccion {padding-bottom: 25px; }

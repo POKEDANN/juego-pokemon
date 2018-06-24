@@ -43,7 +43,7 @@
 
 	R::store($new_user);
 
-	header('Location: http://192.168.64.2/juego pokemon/plataforma.html');
+	header('Location: http://192.168.64.2/juego pokemon/seleccionar.html');
 	
 	// if(isset($_POST['registrar'])){
 	// 	echo("<script type='text/javascript'>prompt('nombre: " . $usuario . "pass: " . $pass . "sexo: " . $gender . "'); </script>");//este sirve para hacer un prompt

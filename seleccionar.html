@@ -8,24 +8,26 @@
 	<link rel="stylesheet" href="css/seleccionar.css">
 </head>
 <body>
-	<section>
+
+	<section class="seleccion">
 		<div class="container">
 			<div class="row">
 				<h2 class="text-center" style="color: #fff;font-size: 40px;">Free For All</h2>
-				<form action="">
-					<select class="image-picker show-labels show-html" data-limit="3" multiple="multiple">
-					  <option value="">Selecciona 3 pokemon:</option>
-					  <option data-img-src="img/pika.png" value="1">Pikachu</option>
-					  <option data-img-src="img/Charizard.png" value="2">Charizard</option>
-					  <option data-img-src="img/Electivire.png" value="3">Electivire</option>
-					  <option data-img-src="img/Goodra.png" value="4">Goodra</option>
-					  <option data-img-src="img/Greninja.png" value="5">Greninja</option>
-					  <option data-img-src="img/Infernape.png" value="6">Infernape</option>
-					  <option data-img-src="img/Lucario.png" value="7">Lucario</option>
-					  <option data-img-src="img/Victini.png" value="8">Victini</option>
-					  <option data-img-src="img/Gigalith.png" value="9">Gigalith</option>
-					  <option data-img-src="img/Snorlax.png" value="10">Snorlax</option>
+				<h3 class="text-center" style="color: yellow;">Por favor selecciona 3 pokemon y presiona "Seleccionar" para continuar:</h3>
+				<form method="post" action="seleccionar.php">
+					<select required="" name="Selecciona[]" id="Selec" class="image-picker show-labels show-html" data-limit="3" multiple="multiple">
+					  <option data-img-src="img/pika.png" value="Pikachu">Pikachu</option>
+					  <option data-img-src="img/Charizard.png" value="Charizard">Charizard</option>
+					  <option data-img-src="img/Electivire.png" value="Electivire">Electivire</option>
+					  <option data-img-src="img/Goodra.png" value="Goodra">Goodra</option>
+					  <option data-img-src="img/Greninja.png" value="Greninja">Greninja</option>
+					  <option data-img-src="img/Infernape.png" value="Infernape">Infernape</option>
+					  <option data-img-src="img/Lucario.png" value="Lucario">Lucario</option>
+					  <option data-img-src="img/Victini.png" value="Victini">Victini</option>
+					  <option data-img-src="img/Gigalith.png" value="Gigalith">Gigalith</option>
+					  <option data-img-src="img/Snorlax.png" value="Snorlax">Snorlax</option>
 					</select>
+					<button id="seleccion" type="submit" style="background-color: yellow; color: blue; font-weight: 600; font-size: 25px; display: block; margin: 0 auto;">Seleccionar</button>
 				</form>
 			</div>
 		</div>
@@ -35,6 +37,16 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/image-picker.js"></script>
 	<script>
-		$("select").imagepicker({limit_reached: function(){alert('Ya elegiste suficientes')}})
+		$("select").imagepicker({limit_reached: function(){
+				alert('Solo puedes elegir tres');
+			}
+		});
+
+		$('#seleccion').click(function(){//siempre debe estar el signo de $ para inicializar JQuery
+			if($("select").val() == ''){
+				alert('Tienes que seleccionar a tres');
+			}
+		});
+
 	</script>
 </html>
